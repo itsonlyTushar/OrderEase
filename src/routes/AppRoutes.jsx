@@ -20,11 +20,16 @@ import FAQ from "../user/pages/FAQ";
 import ScrollTop from "./ScrollTop";
 import NotFoundPage from "./NotFoundPage";
 
+
+
 function AppRoutes() {
+
+
   return (
     <BrowserRouter>
       <ScrollTop />
       <Routes>
+
         {/* Public Routes */}
         <Route path="*" element={<NotFoundPage />}/>
         <Route path="/user/:vendorId" element={<UserPage />} />
