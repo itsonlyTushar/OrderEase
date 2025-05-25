@@ -4,14 +4,14 @@
 
 ## Screen Shot
 
-https://res.cloudinary.com/dartdvch1/image/upload/v1748194332/Workflows_vwfj11.gif
+[Watch the demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748194332/Workflows_vwfj11.gif)
 
 
+![Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193011/Web_Photo_Editor_1_ufbke4.jpg)
+![Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748180616/screenzy-1748088920667_jswcj0.png)
+![Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193203/screenzy-1748193187216_cf4bjk.png)
+![Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193303/screenzy-1748193294730_tsztcg.png)
 
-[Live Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193011/Web_Photo_Editor_1_ufbke4.jpg)
-[Live Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748180616/screenzy-1748088920667_jswcj0.png)
-[Live Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193203/screenzy-1748193187216_cf4bjk.png)
-[Live Demo](https://res.cloudinary.com/dartdvch1/image/upload/v1748193303/screenzy-1748193294730_tsztcg.png)
 
 Link : https://order-ease-xi.vercel.app/
 
