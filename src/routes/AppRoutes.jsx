@@ -18,11 +18,13 @@ import LandingLayout from "../Layout/LandingLayout";
 import Terms from "../user/pages/Terms";
 import FAQ from "../user/pages/FAQ";
 import ScrollTop from "./ScrollTop";
+import NotFoundPage from "./NotFoundPage";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <ScrollTop />
+      <Route path="*" element={<NotFoundPage />}/>
       <Routes>
         {/* Public Routes */}
         <Route path="/user/:vendorId" element={<UserPage />} />
