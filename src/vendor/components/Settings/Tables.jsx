@@ -8,7 +8,7 @@ function Tables() {
   const [table, setTable] = useState("");
   const [showQR, setShowQR] = useState(false);
   const vendorId = useSelector((state) => state.auth.user);
-  const baseURL = "http://localhost:5173/user";
+  const baseURL = "https://order-ease-xi.vercel.app/user";
   const fullURL = `${baseURL}/${vendorId.uid}?table=${table}`;
 
   const handleTablePrint = (e) => {
