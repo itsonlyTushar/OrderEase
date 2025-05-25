@@ -15,9 +15,9 @@ import Landing from "../user/pages/Landing";
 import Pricing from "../user/pages/Pricing";
 import About from "../user/pages/About";
 import LandingLayout from "../Layout/LandingLayout";
-import ScrollTop from "../utils/scrollTop";
 import Terms from "../user/pages/Terms";
 import FAQ from "../user/pages/FAQ";
+import ScrollTop from "./ScrollTop";
 
 function AppRoutes() {
   return (
