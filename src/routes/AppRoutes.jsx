@@ -24,9 +24,9 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <ScrollTop />
-      <Route path="*" element={<NotFoundPage />}/>
       <Routes>
         {/* Public Routes */}
+        <Route path="*" element={<NotFoundPage />}/>
         <Route path="/user/:vendorId" element={<UserPage />} />
         <Route element={<LandingLayout />}>
           <Route path="/" element={<Landing />} />
