@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --color-main: #f1f1f1;
+  --white-bg: #ffff;
+  --gray-text: #878787;
+  --black-color: #2a2a2a;
+
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f1f1f1;
+}
+
+.recharts-default-tooltip {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border-radius: 8px;
+  border: none;
+}
+
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .qr-print-area,
+  .qr-print-area * {
+    visibility: visible;
+  }
+
+  .qr-print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+  }
+}
