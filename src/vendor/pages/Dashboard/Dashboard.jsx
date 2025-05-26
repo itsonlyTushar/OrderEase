@@ -12,7 +12,6 @@ import OrderSummarry from "../../components/Dashboard/OrderSummarry";
 import OrdersChart from "../../components/Dashboard/OrdersChart";
 import { RiRefreshFill } from "react-icons/ri";
 
-
 export default function Dashboard() {
   const [vendorInfo, setVendorInfo] = useState(null);
   const [vendorLoading, setVendorLoading] = useState(false);
@@ -60,7 +59,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    fetchOrdersData(); // initial fetch
+    fetchOrdersData();
 
     const interval = setInterval(() => {
       fetchOrdersData();
@@ -97,37 +96,37 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:col-span-2">
-            <section className="bg-whiteBg text-center rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm w-full">
-              <div className="flex justify-start items-center gap-2 text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
+            <section className="bg-whiteBg rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm w-full flex flex-col justify-center items-center text-center">
+              <div className="flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
                 <span className="border rounded-full p-2 bg-mainBg">
                   <MdRestaurantMenu />
                 </span>
                 <h2 className="sm:text-3xl text-4xl">Total Orders</h2>
               </div>
               {vendorLoading ? (
-                <span className="text-2xl flex justify-center py-5 mx-auto text-blackBg font-semibold">
+                <span className="text-2xl flex justify-center py-5 text-blackBg font-semibold">
                   <TbLoader3 className="animate-spin" />
                 </span>
               ) : (
-                <span className="text-7xl text-blackBg font-extrabold">
+                <span className="text-5xl md:text-7xl text-blackBg font-extrabold">
                   {orderTotal}
                 </span>
               )}
             </section>
 
-            <section className="bg-whiteBg text-center rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm w-full">
-              <div className="flex justify-start items-center gap-2 text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
+            <section className="bg-whiteBg rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm w-full flex flex-col justify-center items-center text-center">
+              <div className="flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
                 <span className="border rounded-full p-2 bg-mainBg">
                   <FaIndianRupeeSign />
                 </span>
                 <h2 className="sm:text-3xl text-4xl">Total Sales</h2>
               </div>
               {vendorLoading ? (
-                <span className="text-2xl flex justify-center py-5 mx-auto text-blackBg font-semibold">
+                <span className="text-2xl flex justify-center py-5 text-blackBg font-semibold">
                   <TbLoader3 className="animate-spin" />
                 </span>
               ) : (
-                <span className="text-7xl text-blackBg font-extrabold">
+                <span className="text-5xl md:text-7xl text-blackBg font-extrabold">
                   {revenue}
                 </span>
               )}
@@ -152,7 +151,7 @@ export default function Dashboard() {
               onClick={handleRefresh}
               className="border px-2 py-1 rounded-xl text-2xl"
             >
-              <RiRefreshFill className={`${vendorLoading && 'animate-spin'}`} />
+              <RiRefreshFill className={`${vendorLoading && "animate-spin"}`} />
             </button>
           </div>
 
