@@ -35,28 +35,7 @@ function Pricing() {
         </h1>
       </header>
 
-      <div className="grid sm:grid-cols-3 grid-cols-1 place-items-center py-10 gap-8">
-        {/* Subscribe Card */}
-        <article
-          className="bg-blackBg text-whiteBg rounded-2xl p-6 w-full max-w-sm sm:h-[35rem]"
-          aria-label="Subscription Plan"
-        >
-          <header>
-            <h2 className="text-lg font-medium">Save More</h2>
-            <h3 className="font-bold text-3xl mt-1">Subscription Plan</h3>
-          </header>
-          <p className="text-wrap font-thin my-2">
-            Choose a plan that suits you and pay accordingly.
-          </p>
-          <IoArrowForwardCircleOutline className="text-4xl mt-2" />
-          <img
-            data-aos="fade-up"
-            className="max-w-xs mt-4"
-            src={pic}
-            alt="Subscription plan visual"
-          />
-        </article>
-
+      <div className="grid sm:grid-cols-2 grid-cols-1 place-items-center py-10 gap-8">
         {/* Monthly Card */}
         <article
           className="bg-whiteBg text-blackBg rounded-2xl shadow-md p-6 w-full max-w-sm flex flex-col justify-between sm:h-[35rem]"
